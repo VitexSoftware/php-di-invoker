@@ -1,0 +1,22 @@
+Source: php-di-invoker
+Section: php
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends:
+ debhelper-compat (= 13)
+Standards-Version: 4.7.0
+Homepage: https://github.com/PHP-DI/Invoker
+Vcs-Git: https://github.com/PHP-DI/Invoker.git
+Vcs-Browser: https://github.com/PHP-DI/Invoker
+Rules-Requires-Root: no
+
+Package: php-di-invoker
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends},
+ php-common,
+ php-psr-container
+Description: Generic and extensible callable invoker
+ Provides an extensible callable invoker with dependency injection
+ support. Part of the PHP-DI dependency injection container ecosystem.
